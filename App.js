@@ -25,7 +25,6 @@ export default function App() {
         <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
           <Cards {...category1} />
           <Cards {...category2} />
-          <Cards {...category2} />
         </ScrollView>
       </ScrollView>
     </SafeAreaView>
@@ -39,4 +38,14 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     borderRadius: 35,
   },
+  categoryText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  cardContainer: {
+    marginTop: 10,
+    paddingHorizontal: 20,
+    marginBottom: 10
+  }
 });
