@@ -4,7 +4,7 @@ import Search from './components/Search';
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <Frame1 />
       <Search />
     </SafeAreaView>
@@ -14,7 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  
+    backgroundColor: '#F7F0E8',
+    paddingTop: 20,
+    borderRadius: 35,
   },
 });
