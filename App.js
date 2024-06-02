@@ -15,6 +15,11 @@ export default function App() {
     name: "Study",
     taskno: "12 Task",
     image: require('./Images/young woman working at desk.png')
+  };
+  const category3 = {
+    name: "Coding",
+    taskno: "12 Task",
+    image: require('./Images/coding.jpeg')
   }
 
   return (
@@ -27,6 +32,7 @@ export default function App() {
           <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
             <Cards {...category1} />
             <Cards {...category2} />
+            <Cards {...category3} />
           </ScrollView>
         </ScrollView>
 
