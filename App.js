@@ -20,6 +20,36 @@ export default function App() {
     name: "Coding",
     taskno: "12 Task",
     image: require('./Images/coding.jpeg')
+  };
+  const category4 = {
+    name: "Cook",
+    taskno: "12 Task",
+    image: require('./Images/cook.jpeg')
+  };
+  const category5 = {
+    name: "Dance",
+    taskno: "12 Task",
+    image: require('./Images/dancing.jpeg')
+  };
+  const category6 = {
+    name: "Music",
+    taskno: "12 Task",
+    image: require('./Images/music.jpeg')
+  };
+  const category7 = {
+    name: "Laundry",
+    taskno: "12 Task",
+    image: require('./Images/laundry.jpeg')
+  };
+  const category8 = {
+    name: "Karate",
+    taskno: "12 Task",
+    image: require('./Images/karate.jpeg')
+  };
+  const category9 = {
+    name: "Soccer",
+    taskno: "12 Task",
+    image: require('./Images/soccer.jpeg')
   }
 
   return (
@@ -33,9 +63,14 @@ export default function App() {
             <Cards {...category1} />
             <Cards {...category2} />
             <Cards {...category3} />
+            <Cards {...category4} />
+            <Cards {...category5} />
+            <Cards {...category6} />
+            <Cards {...category7} />
+            <Cards {...category8} />
+            <Cards {...category9} />
           </ScrollView>
         </ScrollView>
-
         <SectionList
           sections={Tasklist}
           renderItem={({ item }) => {
